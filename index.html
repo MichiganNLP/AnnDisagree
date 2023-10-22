@@ -44,6 +44,7 @@
 
   <header>
     <a href="https://lit.eecs.umich.edu/"><img id="arc" src="img/lit-logo.png" alt="LIT lab logo"></a>
+    <a href="https://launch.eecs.umich.edu/"><img id="arc" src="img/launch.jpeg" alt="LAUNCH lab logo"></a>
 
     <a href="https://umich.edu/"><img id="um" src="img/um.png" alt="University of Michigan logo"></a>
 
@@ -52,7 +53,9 @@
     <ul id="quick-links">
       <li><a href="https://lit.eecs.umich.edu/">Paper</a></li>
 
-      <li><a href="https://lit.eecs.umich.edu/">Data + Code</a></li>
+      <li><a href="https://lit.eecs.umich.edu/">Code</a></li>
+
+      <li><a href="https://huggingface.co/datasets/dnaihao/TID-8">TID-8 dataset</a></li>
 
       <li><a href="https://lit.eecs.umich.edu/">ACL Anthology page</a></li>
 
@@ -65,8 +68,9 @@
       <h2>Abstract</h2>
 
       <p id="abstract">
-        Annotator disagreement is ubiquitous in natural language processing (NLP) tasks. There are multiple reasons for such disagreements,  including the subjectivity of the task, difficult cases, unclear guidelines, and so on. Rather than simply aggregating labels to obtain data annotations, we instead try to directly model the diverse perspectives of the annotators, and explicitly account for annotators' idiosyncrasies in the modeling process by creating representations for each annotator (<b>annotator embeddings</b>) and also their annotations (<b>annotation embeddings</b>). 
-        Our approach helps models learn significantly better from disagreements on six different NLP datasets while increasing model size by fewer than 1% parameters. 
+        Annotator disagreement is ubiquitous in natural language processing (NLP) tasks. There are multiple reasons for such disagreements, including the subjectivity of the task, difficult cases, unclear guidelines, and so on. Rather than simply aggregating labels to obtain data annotations, we instead try to directly model the diverse perspectives of the annotators, and explicitly account for annotators' idiosyncrasies in the modeling process by creating representations for each annotator (<i>annotator embeddings</i>) and also their annotations (<i>annotation embeddings</i>). 
+        In addition, we propose <b>TID-8</b>, <u><b>T</b></u>he <u><b>I</b></u>nherent <u><b>D</b></u>isagreement - <u><b>8</b></u> dataset, a benchmark that consists of eight existing language understanding datasets that have inherent annotator disagreement.
+        We test our approach on TID-8 and show that our approach helps models learn significantly better from disagreements on six different datasets in TID-8 while increasing model size by fewer than 1% parameters. 
         By capturing the unique tendencies and subjectivity of individual annotators through embeddings, our representations prime AI models to be inclusive of diverse viewpoints. 
       </p>
     </div>
@@ -112,7 +116,7 @@
         <li>
           <a href="https://web.eecs.umich.edu/~xlfzhang/">
             <div class="author-img-container">
-              <img src="img/authors/xinliang_frederick_zhang.png" alt="Xinliang Frederick Zhang profile picture">
+              <img src="img/authors/xinliang_frederick_zhang.jpg" alt="Xinliang Frederick Zhang profile picture">
             </div>
             Xinliang Zhang
           </a>
@@ -145,16 +149,22 @@
     </div>
   </section>
 
+
   <section>
     <div class="content">
-      <h2>Video Presentation of Our Paper</h2>
-      <div class="video">
-        <video id="example-video" style="max-width:80%;max-height:100%" src="https://www.youtube.com/watch?v=xCUjBPS9WTw" controls> </video>
-      </div>
+      <h2>Downloads</h2>
+
+      <ul id="downloads">
+        <li><a href="https://lit.eecs.umich.edu/"><b>PDF Paper</b></a></li>
+        <br>
+        <li><a href="https://lit.eecs.umich.edu/"><b>Code</b></a></li>
+        <br>
+        <a href="https://huggingface.co/datasets/dnaihao/TID-8"><b>TID-8 dataset</b></a>
+      </ul>
     </div>
   </section>
 
-  <section>
+  <section class="section-alt">
     <p id="affiliation">
       <a href="https://umich.edu/">
         <img id="um-vertical" alt="University of Michigan" src="img/um-vertical.png">
@@ -162,24 +172,14 @@
     </p>
   </section>
 
-  <section class="section-alt">
-    <div class="content">
-      <h2>Downloads</h2>
-
-      <ul id="downloads">
-        <li><a href="https://lit.eecs.umich.edu/">PDF Paper</a></li>
-        <li><a href="https://lit.eecs.umich.edu/">Data + Code</a> (with instructions)</li>
-      </ul>
-    </div>
-  </section>
-
   <footer>
-    <div class="content">
+    <div class="content" class="section-alt">
       <h2>Acknowledgments</h2>
       <p id="acknowledgments-text">
         We thank the anonymous reviewers for their feedback.
         We thank <a href="https://www.linkedin.com/in/zhenjie-sun-945879273/">Zhenjie Sun</a>, <a href="https://ying-hui-he.github.io/">Yinghui He</a>, and <a href="https://www.linkedin.com/in/yufan-wu-a27b6b24b/overlay/contact-info/">Yufan Wu</a> for their help on the data processing part of this project. 
         We also thank members of <a href="https://lit.eecs.umich.edu/people.html">the Language and Information Technologies (LIT) Lab</a> at the University of Michigan for their constructive feedback.
+        This project was partially funded by an award from the Templeton Foundation (#62256).
       </p>
 
       <p>
