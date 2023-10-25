@@ -1,6 +1,6 @@
-# WildQA
+# AnnDisagree
 
-Code for the [WildQA website](https://lit.eecs.umich.edu/wildqa/).
+Code for the [AnnDisagree website](https://lit.eecs.umich.edu/anndisagree/).
 
 ## Paper page thumbnails.
 
