@@ -14,7 +14,7 @@ body {
 
 #arc {
   float: left;
-  height: 120px;
+  height: 80px;
   margin-left: 10px;
 }
 
@@ -23,7 +23,7 @@ body {
   margin-left: 14px;
   margin-right: 10px;
   margin-top: 10px;
-  height: 100px;
+  height: 75px;
 }
 
 #quick-links {
